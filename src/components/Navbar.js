@@ -4,13 +4,11 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div>
-
-      <Link href="/">Home</Link>
-      <Link href="/pugsNcookies/about">About</Link>
-      <Link href="/pugsNcookies/cookies">Cookies</Link>
-      <Link href="/pugsNcookies/contact">Contact</Link>
-
+    <div id='nav-bar'>
+      <Link className='link-btn' href="/">Home</Link>
+      <Link className='link-btn' href="/pugsNcookies/about">About</Link>
+      <Link className='link-btn' href="/pugsNcookies/cookies">Cookies</Link>
+      <Link className='link-btn' href="/pugsNcookies/contact">Contact</Link>
     </div>
   )
 }

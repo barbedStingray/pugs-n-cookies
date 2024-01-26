@@ -38,6 +38,10 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+
+  /* * BEN CSS VARIABLES */
+  --brown-color: rgb(106, 63, 38);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,6 +90,116 @@ body {
   overflow-x: hidden;
 }
 
+
+@font-face {
+  font-family: cookie;
+  src: url('../Fonts/Cookies.otf');
+}
+
+#main-format {
+  /* border: 2px solid magenta; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pugsNcookies-div {
+  border: 2px solid yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-div {
+  /* border: 2px solid pink; */
+  position: relative;
+  height: 25vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* *title words */
+.pugsNcookies {
+  font-family: cookie;
+  font-size: 60px;
+  color: #6a3f26;
+  position: absolute;
+  transform: rotate(2deg);
+  /* text-decoration: underline; */
+  /* border: solid 1px red; */
+  z-index: 3;
+}
+
+.paperOne {
+  /* position: absolute; */
+  /* border: solid 1px blue; */
+  position: absolute;
+  padding: 2%;
+  height: 130px;
+  width: 800px;
+  background-color: tan;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgb(84, 62, 34);
+  transform: rotate(-2deg);
+
+}
+.paperTwo {
+  position: absolute;
+  height: 110px;
+  width: 700px;
+  z-index: 2;
+  box-shadow: 0px 0px 5px black;
+  transform: rotate(2deg);
+  border-radius: 10px;
+  background-color: rgb(237, 209, 172);
+}
+.paperThree {
+  position: absolute;
+  height: 90px;
+  width: 600px;
+  z-index: 1;
+  box-shadow: 0px 0px 5px rgb(84, 62, 34);
+  transform: rotate(-4deg);
+  border-radius: 10px;
+  background-color: rgb(233, 212, 182);
+
+}
+
+#cookies-div {
+  /* border: 2px solid red; */
+  width: 90vw;
+  /* height: 100vh; */
+}
+
+#nav-bar {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.link-btn {
+  border: 2px solid #6a3f26;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: tan;
+  transition: 0.25s;
+}
+.link-btn:hover {
+  background-color: rgb(230, 208, 179);
+}
+
+
+
+
+
+
 /* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -96,7 +210,7 @@ body {
     rgb(var(--background-start-rgb));
 } */
 body {
-  background-color: rgb(69, 58, 43);
+  background-color: rgb(225, 202, 169);
 }
 
 /* ** eliminates your text decoration in css */

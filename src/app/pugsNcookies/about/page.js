@@ -2,13 +2,10 @@
 
 export default function about() {
   return (
-    <main>
+    <div>
 
-      <h1>About Cookies!</h1>
+      <h1>About</h1>
 
-
-
-
-    </main>
+    </div>
   );
 }

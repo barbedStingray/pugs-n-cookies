@@ -2,13 +2,11 @@
 
 export default function cookies() {
     return (
-      <main>
+      <div id="cookies-div">
   
-        <h1>This is the Cookies Page</h1>
-        <p>hello world</p>
+        <h1>Cookies</h1>  
   
-  
-      </main>
+      </div>
     );
   }
   

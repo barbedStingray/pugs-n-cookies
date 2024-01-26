@@ -1,12 +1,12 @@
 import Navbar from '../../components/Navbar';
- 
+import Header from '../../components/Header';
+
 export default function Layout({ children }) {
   return (
-    <div>
-      <div>
+    <div id='pugsNcookies-div'>
+        <Header />
         <Navbar />
-      </div>
-      <div >{children}</div>
+        {children}
     </div>
   );
 }
