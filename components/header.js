@@ -20,10 +20,12 @@ const Header = () => (
                 <LiaCookieBiteSolid />
                 <Link href='/contact'>Contact</Link>
             </div>
-            <div className='header-item'>
+            {/* <div className='header-item'>
                 <MdOutlineCookie />
                 <Link href='/cookies'>Cookies</Link>
-            </div>
+            </div> */}
+            <Link className='header-item' href='/cookies'>{<MdOutlineCookie />}Cookies</Link>
+
         </div>
     </header>
 );

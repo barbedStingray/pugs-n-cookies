@@ -2,57 +2,57 @@
 const Phoebe = () => {
     return (
         // {/* PHOEBE PUG */}
-            <div class="box">
-                <div class="head">
-                    <div class="head-copy"></div>
-                    <div class="ear-left"></div>
-                    <div class="ear-right"></div>
-                    <div class="outer-eye-left">
-                        <div class="inner-eye">
-                            <div class="pupil"></div>
+            <div className="box">
+                <div className="head">
+                    <div className="head-copy"></div>
+                    <div className="ear-left"></div>
+                    <div className="ear-right"></div>
+                    <div className="outer-eye-left">
+                        <div className="inner-eye">
+                            <div className="pupil"></div>
                         </div>
                     </div>
-                    <div class="outer-eye-right">
-                        <div class="inner-eye">
-                            <div class="pupil"></div>
+                    <div className="outer-eye-right">
+                        <div className="inner-eye">
+                            <div className="pupil"></div>
                         </div>
                     </div>
-                    <div class="muzzle">
-                        <div class="muzzle-top">
-                            <div class="nose"></div>
+                    <div className="muzzle">
+                        <div className="muzzle-top">
+                            <div className="nose"></div>
                         </div>
                     </div>
                 </div>
-                <div class="belly">
-                    <div class="leg-left">
-                        <div class="leg-inner"></div>
-                        <div class="front-paw">
-                            <div class="front-paw-top"></div>
+                <div className="belly">
+                    <div className="leg-left">
+                        <div className="leg-inner"></div>
+                        <div className="front-paw">
+                            <div className="front-paw-top"></div>
                         </div>
                     </div>
-                    <div class="leg-right">
-                        <div class="leg-inner"></div>
-                        <div class="front-paw-right">
-                            <div class="front-paw-top-right"></div>
+                    <div className="leg-right">
+                        <div className="leg-inner"></div>
+                        <div className="front-paw-right">
+                            <div className="front-paw-top-right"></div>
                         </div>
                     </div>
-                    <div class="foot-left">
-                        <div class="main-foot-pad"></div>
-                        <div class="toe-pad-1"></div>
-                        <div class="toe-pad-2"></div>
-                        <div class="toe-pad-3"></div>
-                        <div class="toe-pad-4"></div>
+                    <div className="foot-left">
+                        <div className="main-foot-pad"></div>
+                        <div className="toe-pad-1"></div>
+                        <div className="toe-pad-2"></div>
+                        <div className="toe-pad-3"></div>
+                        <div className="toe-pad-4"></div>
                     </div>
-                    <div class="foot-right">
-                        <div class="main-foot-pad"></div>
-                        <div class="toe-pad-1"></div>
-                        <div class="toe-pad-2"></div>
-                        <div class="toe-pad-3"></div>
-                        <div class="toe-pad-4"></div>
-                        <div class="toe-pad-1"></div>
-                        <div class="toe-pad-2"></div>
-                        <div class="toe-pad-3"></div>
-                        <div class="toe-pad-4"></div>
+                    <div className="foot-right">
+                        <div className="main-foot-pad"></div>
+                        <div className="toe-pad-1"></div>
+                        <div className="toe-pad-2"></div>
+                        <div className="toe-pad-3"></div>
+                        <div className="toe-pad-4"></div>
+                        <div className="toe-pad-1"></div>
+                        <div className="toe-pad-2"></div>
+                        <div className="toe-pad-3"></div>
+                        <div className="toe-pad-4"></div>
                     </div>
                 </div>
             </div>

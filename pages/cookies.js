@@ -3,7 +3,7 @@ import Page from '@/components/page';
 export default function Cookies() {
     return (
         <Page>
-            <h1>Cookies!</h1>
+            <h2>Cookies!</h2>
         </Page>
     )
 }
