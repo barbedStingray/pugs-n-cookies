@@ -24,7 +24,9 @@ const App = ({ Component, pageProps }) => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
             >
+                {/* THIS IS THE MAIN COMPONENT DISPLAYED ON THE DOM */}
                 <Component {...pageProps} />
+                
             </motion.div>
 
             <motion.div

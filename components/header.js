@@ -8,24 +8,10 @@ import { LiaCookieSolid } from "react-icons/lia";
 const Header = () => (
     <header>
         <div className='header-items'>
-            <div className='header-item'>
-                <LiaCookieSolid />
-                <Link href='/'>Home</Link>
-            </div>
-            <div className='header-item'>
-                <TbCookieMan />
-                <Link href='/about'>About</Link>
-            </div>
-            <div className='header-item'>
-                <LiaCookieBiteSolid />
-                <Link href='/contact'>Contact</Link>
-            </div>
-            {/* <div className='header-item'>
-                <MdOutlineCookie />
-                <Link href='/cookies'>Cookies</Link>
-            </div> */}
+            <Link className='header-item' href='/'>{<LiaCookieSolid />}Home</Link>
+            <Link className='header-item' href='/about'>{<TbCookieMan />}About</Link>
+            <Link className='header-item' href='/contact'>{<LiaCookieBiteSolid />}Contact</Link>
             <Link className='header-item' href='/cookies'>{<MdOutlineCookie />}Cookies</Link>
-
         </div>
     </header>
 );
