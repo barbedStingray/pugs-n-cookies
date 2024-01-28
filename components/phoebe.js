@@ -2,7 +2,7 @@
 const Phoebe = () => {
     return (
         // {/* PHOEBE PUG */}
-            <div className="box">
+            <div className="pugBox">
                 <div className="head">
                     <div className="head-copy"></div>
                     <div className="ear-left"></div>

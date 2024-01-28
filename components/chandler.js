@@ -2,7 +2,7 @@
 
 const Chandler = () => {
     return (
-            <div className="box">
+            <div className="pugBox">
                 <div className="c-head">
                     <div className="c-head-copy"></div>
                     <div className="c-ear-left"></div>

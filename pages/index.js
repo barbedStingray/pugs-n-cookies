@@ -1,6 +1,9 @@
 import Page from '@/components/page';
-import Phoebe from '@/components/phoebe';
-import Chandler from '@/components/chandler';
+import { GiDogHouse } from "react-icons/gi";
+import { BiSolidDog, BiSolidCookie } from "react-icons/bi";
+import { LuDog, LuBone } from "react-icons/lu";
+import { MdCookie } from "react-icons/md";
+import { PiCookieBold } from "react-icons/pi";
 
 
 export default function Home() {
@@ -9,21 +12,32 @@ export default function Home() {
             {/* THIS IS YOUR HOME PAGE */}
             <div id='home-div'>
 
+                <div className='home-cookiePics'>
+                    <BiSolidCookie className='homeCookie' />
+                    <LuDog className='homeCookie' />
+                    <LuBone className='homeCookie' />
+                    <MdCookie className='homeCookie' />
+                </div>
+
 
                 <div id='title-div'>
                     <h1 className='pugsNcookies'>Pugs</h1>
                     <h1 className='pugsNcookies'>N'</h1>
-                    <h1 className='pugsNcookies'>Cookies!</h1>
+                    <h1 className='pugsNcookies'>Cookies</h1>
                     {/* <div className='paperTwo'></div>
                     <div className='paperOne' ></div>
                     <div className='paperThree' ></div> */}
                 </div>
 
+                <div className='home-cookiePics'>
+                    <PiCookieBold className='homeCookie' />
+                    <GiDogHouse className='homeCookie' />
+                    <BiSolidDog className='homeCookie' />
+                    <PiCookieBold className='homeCookie' />
+                </div>
 
-                {/* <div id='pug-div'>
-                    <Phoebe />
-                    <Chandler />
-                </div> */}
+
+
 
 
             </div>
