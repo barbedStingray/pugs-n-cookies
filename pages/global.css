@@ -36,6 +36,7 @@ header {
   padding: 1em;
   background-color: #f5dfc0;
   border-bottom: 3px solid #6a3f26;
+  border-top: 3px solid #6a3f26;
   z-index: 10;
 }
 header .header-items {
@@ -68,9 +69,9 @@ h2 {
   margin: 2%;
 }
 
-/* *Home Page* */
+/* * HOME PAGE * */
 #home-div {
-  border: 2px solid magenta;
+  /* border: 2px solid magenta; */
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -114,10 +115,19 @@ h2 {
 
 /* * END HOME PAGE * */
 
+
+
+
+
+
+
+
+
+
 /* * ABOUT PAGE * */
 
 #about-div {
-  border: 2px solid greenyellow;
+  /* border: 2px solid greenyellow; */
   width: 100vw;
   /* height: 100vh; */
   display: flex;
@@ -169,6 +179,10 @@ h2 {
   transform: rotate(2deg);
   border-radius: 10px;
   background-color: rgb(237, 209, 172);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .card3 {
   /* border: 2px solid red; */
@@ -203,9 +217,95 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
+
+/* * END ABOUT PAGE * */
+
+
+
+
+
+
+
+
+
+
+/* * CONTACT PAGE * */
+
+#contact-div {
+  /* border: 2px solid red; */
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 80px;
+}
+#contact-info {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 5%;
+}
+.icon-size {
+  font-size: 22px;
+}
+.card4 {
+  /* border: 2px solid blue; */
+  position: absolute;
+  padding: 2%;
+  height: 200px;
+  width: 300px;
+  background-color: tan;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgb(84, 62, 34);
+  transform: rotate(1deg);
+}
+.card5 {
+  /* border: 2px solid orange; */
+  position: absolute;
+  height: 160px;
+  width: 320px;
+  z-index: 2;
+  box-shadow: 0px 0px 5px black;
+  transform: rotate(-3deg);
+  border-radius: 10px;
+  background-color: rgb(237, 209, 172);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+.card6 {
+  /* border: 2px solid red; */
+  position: absolute;
+  height: 200px;
+  width: 270px;
+  z-index: 1;
+  box-shadow: 0px 0px 5px rgb(84, 62, 34);
+  transform: rotate(-5deg);
+  border-radius: 10px;
+  background-color: rgb(233, 212, 182);
+}
+.contact-photo {
+  width: 370px;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border: 5px solid #6a3f26;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+/* * END CONTACT PAGE * */
 
 
 
@@ -235,6 +335,11 @@ h2 {
     width: 450px;
     height: 300px;  
   }
+  /* CONTACT PAGE */
+  .contact-photo {
+    width: 910px;
+  }
+
 }
 @media (max-width: 1200px) {
   /* HOME PAGE */
@@ -259,6 +364,11 @@ h2 {
     width: 375px;
     height: 275px;  
   }
+  /* CONTACT PAGE */
+  .contact-photo {
+    width: 710px;
+  }
+
 }
 @media (max-width: 768px) {
   /* HOME PAGE */
@@ -292,6 +402,19 @@ h2 {
     width: 375px;
     height: 275px;  
   }
+  /* CONTACT PAGE */
+  #contact-div {
+    padding-top: 90px;
+  }
+  #contact-info {
+    flex-direction: column;
+  }
+  .contact-photo {
+    width: 430px;
+  }
+
+
+
 }
 /* phone size */
 @media (max-width: 425px) {
@@ -336,169 +459,19 @@ h2 {
     width: 375px;
     height: 275px;  
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#contact-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contact-photo {
-  height: 200px;
-  width: auto;
-  border: 10px solid #6a3f26;
-  box-shadow: 0px 0px 10px black;
-  border-radius: 10px;
-  margin: 5%;
-}
-
-.contact-info {
-  /* border: 2px solid yellow; */
-  min-width: 300px;
-  max-width: 300px;
-
-  z-index: 5;
-  transform: rotate(2deg);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 20px;
-  align-items: center;
-
-
-}
-.contact-description {
-  /* border: 2px solid yellow; */
-  max-width: 300px;
-  min-width: 300px;
-  z-index: 5;
-  transform: rotate(2deg);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 20px;
-  align-items: center;
-  transform: rotate(-1deg);
-
-
-}
-
-.contact-cards {
-  /* border: 2px solid magenta; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 200px;
-  padding: 2%;
-  margin-top: -4%;
-}
-.card-div {
-    /* border: 2px solid green; */
-    width: 25%;
-    position: relative;
-    height: 25vh;
-    /* width: 90vw; */
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  /* CONTACT PAGE */
+  #contact-div {
+    padding-top: 90px;
+  }
+  #contact-info {
+    flex-direction: column;
+  }
+  .contact-photo {
+    width: 370px;
+  }
   
-}
-/* .card1 {
-  border: 2px solid blue;
-  position: absolute;
-  padding: 2%;
-  height: 200px;
-  width: 300px;
-  background-color: tan;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px rgb(84, 62, 34);
-  transform: rotate(-2deg);
-}
-.card2 {
-  border: 2px solid orange;
-  position: absolute;
-  height: 160px;
-  width: 320px;
-  z-index: 2;
-  box-shadow: 0px 0px 5px black;
-  transform: rotate(2deg);
-  border-radius: 10px;
-  background-color: rgb(237, 209, 172);
-}
-.card3 {
-  border: 2px solid red;
-  position: absolute;
-  height: 190px;
-  width: 300px;
-  z-index: 1;
-  box-shadow: 0px 0px 5px rgb(84, 62, 34);
-  transform: rotate(5deg);
-  border-radius: 10px;
-  background-color: rgb(233, 212, 182);
-} */
 
-.card4 {
-  /* border: 2px solid blue; */
-  position: absolute;
-  padding: 2%;
-  height: 220px;
-  width: 300px;
-  background-color: tan;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px rgb(84, 62, 34);
-  transform: rotate(7deg);
 }
-.card5 {
-  /* border: 2px solid orange; */
-  position: absolute;
-  height: 210px;
-  width: 320px;
-  z-index: 2;
-  box-shadow: 0px 0px 5px black;
-  transform: rotate(-1deg);
-  border-radius: 10px;
-  background-color: rgb(237, 209, 172);
-}
-.card6 {
-  /* border: 2px solid red; */
-  position: absolute;
-  height: 240px;
-  width: 220px;
-  z-index: 1;
-  box-shadow: 0px 0px 5px rgb(84, 62, 34);
-  transform: rotate(-4deg);
-  border-radius: 10px;
-  background-color: rgb(233, 212, 182);
-}
-
-
 
 /* ! If you ever want to build your slideshow */
 /* #slide-show {
