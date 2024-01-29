@@ -31,10 +31,12 @@ export default function Contact() {
                         <div className='card3'></div>
                     </div>
 
+                    <LuDog className='homeCookie' />
+
                     <div id='about-text'>
                         <div className='card5'>
                             <p>
-                                I make cookies for all occasions! If you have something in mind, send a text, write an email, or feel free to call and talk
+                                I make cookies for all occasions! If you have something in mind, send a text, write an email, or feel free to call. Lets talk
                                 and make it happen!
                             </p>
                         </div>
@@ -43,15 +45,14 @@ export default function Contact() {
                     </div>
                 </div>
 
+                <LuBone className='homeCookie' />
+
                 <div>
                     <img className='contact-photo' src='https://media.licdn.com/dms/image/C5616AQHMqrS2th8kMA/profile-displaybackgroundimage-shrink_350_1400/0/1614456264430?e=1711584000&v=beta&t=JJeLROXazX87WGu8qQmyTHkFMjwQkmJHdncQzLZgCvE' alt='a photo of abby!' />
                 </div>
 
                 <div className='home-cookiePics'>
                     <BiSolidCookie className='homeCookie' />
-                    <LuDog className='homeCookie' />
-                    <LuBone className='homeCookie' />
-                    <MdCookie className='homeCookie' />
                 </div>
 
             </div>
