@@ -36,9 +36,11 @@ header {
   padding: 1em;
   background-color: #f5dfc0;
   border-bottom: 3px solid #6a3f26;
+  z-index: 10;
 }
 header .header-items {
   display: flex;
+  justify-content: center;
   gap: 50px;
   font-size: 20px;
 }
@@ -52,6 +54,8 @@ a {
   font-family: cookie;
   src: url('../fonts/Cookies.otf');
 }
+
+
 h1 {
   font-family: cookie;
   color: #6a3f26;
@@ -64,16 +68,17 @@ h2 {
   margin: 2%;
 }
 
-
 /* *Home Page* */
 #home-div {
-  /* border: 2px solid magenta; */
+  border: 2px solid magenta;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
+
 }
 #title-div {
   /* border: 2px solid green; */
@@ -103,11 +108,112 @@ h2 {
   /* border: 2px solid blue; */
   width: 100px;
   height: auto;
-  color: #b87a29
+  color: #b87a29;
+
 }
 
-/* * HOME PAGE ADJUSTMENTS * */
+/* * END HOME PAGE * */
+
+/* * ABOUT PAGE * */
+
+#about-div {
+  border: 2px solid greenyellow;
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 80px;
+}
+.aboutPic {
+  width: 240px;
+  height: auto;
+  border: 3px solid #b87a29;
+  border-radius: 50%;
+  box-shadow: 0 0 10px black;
+  margin-top: 4%;
+}
+.text-block {
+  /* border: 2px solid gold; */
+  padding: 10px;
+  text-align: center;
+}
+#about-text {
+  /* border: 2px solid magenta; */
+  width: 350px;
+  height: 210px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card1 {
+  /* border: 2px solid blue; */
+  position: absolute;
+  padding: 2%;
+  height: 200px;
+  width: 300px;
+  background-color: tan;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgb(84, 62, 34);
+  transform: rotate(-2deg);
+}
+.card2 {
+  /* border: 2px solid orange; */
+  position: absolute;
+  height: 160px;
+  width: 320px;
+  z-index: 2;
+  box-shadow: 0px 0px 5px black;
+  transform: rotate(2deg);
+  border-radius: 10px;
+  background-color: rgb(237, 209, 172);
+}
+.card3 {
+  /* border: 2px solid red; */
+  position: absolute;
+  height: 190px;
+  width: 300px;
+  z-index: 1;
+  box-shadow: 0px 0px 5px rgb(84, 62, 34);
+  transform: rotate(5deg);
+  border-radius: 10px;
+  background-color: rgb(233, 212, 182);
+}
+.pugBox {
+  /* border: 2px solid yellow; */
+  position: relative;
+  /* margin: auto; */
+  display: block;
+  width: 375px;
+  height: 275px;
+  background: none;
+}
+#photo-about {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+#pug-div {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
+
+/* * SCALE PAGE ADJUSTMENTS * */
 @media (max-width: 1600px) {
+  /* HOME PAGE */
   .pugsNcookies {
     font-size: 160px;
   }
@@ -118,8 +224,20 @@ h2 {
   .homeCookie {
     width: 120px;
   }
+  /* ABOUT PAGE */
+  .aboutPic {
+    width: 400px;
+  }
+  .page-title {
+    font-size: 95px;
+  }
+  .pugBox {
+    width: 450px;
+    height: 300px;  
+  }
 }
 @media (max-width: 1200px) {
+  /* HOME PAGE */
   .pugsNcookies {
     font-size: 120px;
   }
@@ -130,8 +248,20 @@ h2 {
   .homeCookie {
     width: 100px;
   }
+  /* ABOUT PAGE */
+  .aboutPic {
+    width: 300px;
+  }
+  .page-title {
+    font-size: 85px;
+  }
+  .pugBox {
+    width: 375px;
+    height: 275px;  
+  }
 }
 @media (max-width: 768px) {
+  /* HOME PAGE */
   .pugsNcookies {
     font-size: 75px;
   }
@@ -142,9 +272,30 @@ h2 {
   .homeCookie {
     width: 80px;
   }
+  /* ABOUT PAGE */
+  #about-div {
+    padding-top: 90px;
+  }
+  .aboutPic {
+    width: 240px;
+  }
+  .page-title {
+    font-size: 70px;
+  }
+  #photo-about {
+    flex-direction: column;
+  }
+  #pug-div {
+    flex-direction: column;
+  }
+  .pugBox {
+    width: 375px;
+    height: 275px;  
+  }
 }
 /* phone size */
 @media (max-width: 425px) {
+  /* HOME PAGE */
   #home-div {
     flex-direction: column;
   }
@@ -168,10 +319,26 @@ h2 {
   .homeCookie {
     width: 70px;
   }
+  /* ABOUT PAGE */
+  #about-div {
+    padding-top: 90px;
+  }
+  .page-title {
+    font-size: 60px;
+  }
+  #photo-about {
+    flex-direction: column;
+  }
+  #pug-div {
+    flex-direction: column;
+  }
+  .pugBox {
+    width: 375px;
+    height: 275px;  
+  }
 }
 
 
-/* * END HOME PAGE * */
 
 
 
@@ -185,37 +352,9 @@ h2 {
 
 
 
-.paperOne {
-  /* border: solid 1px blue; */
-  position: absolute;
-  padding: 2%;
-  /* height: 130px; */
-  /* width: 800px; */
-  background-color: tan;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px rgb(84, 62, 34);
-  transform: rotate(-2deg);
-}
-.paperTwo {
-  position: absolute;
-  /* height: 110px; */
-  /* width: 700px; */
-  z-index: 2;
-  box-shadow: 0px 0px 5px black;
-  transform: rotate(2deg);
-  border-radius: 10px;
-  background-color: rgb(237, 209, 172);
-}
-.paperThree {
-  position: absolute;
-  /* height: 90px; */
-  /* width: 600px; */
-  z-index: 1;
-  box-shadow: 0px 0px 5px rgb(84, 62, 34);
-  transform: rotate(-4deg);
-  border-radius: 10px;
-  background-color: rgb(233, 212, 182);
-}
+
+
+
 
 
 
@@ -291,8 +430,8 @@ h2 {
     align-items: center;
   
 }
-.card1 {
-  /* border: 2px solid blue; */
+/* .card1 {
+  border: 2px solid blue;
   position: absolute;
   padding: 2%;
   height: 200px;
@@ -301,10 +440,9 @@ h2 {
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgb(84, 62, 34);
   transform: rotate(-2deg);
-
 }
 .card2 {
-  /* border: 2px solid orange; */
+  border: 2px solid orange;
   position: absolute;
   height: 160px;
   width: 320px;
@@ -313,10 +451,9 @@ h2 {
   transform: rotate(2deg);
   border-radius: 10px;
   background-color: rgb(237, 209, 172);
-
 }
 .card3 {
-  /* border: 2px solid red; */
+  border: 2px solid red;
   position: absolute;
   height: 190px;
   width: 300px;
@@ -325,8 +462,7 @@ h2 {
   transform: rotate(5deg);
   border-radius: 10px;
   background-color: rgb(233, 212, 182);
-
-}
+} */
 
 .card4 {
   /* border: 2px solid blue; */
@@ -338,7 +474,6 @@ h2 {
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgb(84, 62, 34);
   transform: rotate(7deg);
-
 }
 .card5 {
   /* border: 2px solid orange; */
@@ -350,7 +485,6 @@ h2 {
   transform: rotate(-1deg);
   border-radius: 10px;
   background-color: rgb(237, 209, 172);
-
 }
 .card6 {
   /* border: 2px solid red; */
@@ -362,7 +496,6 @@ h2 {
   transform: rotate(-4deg);
   border-radius: 10px;
   background-color: rgb(233, 212, 182);
-
 }
 
 
@@ -419,18 +552,6 @@ h2 {
 
 
 /* PHOEBE CSS */
-
-.pugBox {
-  /* border: 2px solid yellow; */
-  position: relative;
-  margin: auto;
-  display: block;
-  width: 450px;
-  height: 300px;
-  background: none;
-}
-
-
 
 .head {
   position: absolute;
@@ -913,10 +1034,10 @@ h2 {
   border-radius: 50%;
   position: absolute;
   left: 38%;
-  top: 76%;
+  top: 77%;
   z-index: 5;
-  width: 20px;
-  height: 3px;
+  width: 22%;
+  height: 4%;
 }
 
 .c-belly {
@@ -1052,40 +1173,6 @@ h2 {
   background-color: rgb(50, 50, 50);
   border-radius: 40%;
 }
-
-
-
-/* //define animations */
-/* @keyframes head-tilt {
-  0% {
-    transform: rotate(10deg);
-  }
-
-  50% {
-    transform: rotate(40deg);
-  }
-
-  100% {
-    transform: rotate(10deg);
-  }
-}
-
-@keyframes look {
-  0% {
-    transform: translateX(0px);
-  }
-
-  50% {
-    transform: translateX(5px);
-  }
-
-  100% {
-    transform: translateX(0px);
-  }
-} */
-
-
-
 
 
 
