@@ -50,13 +50,13 @@ a {
   color: black;
   text-transform: uppercase;
 }
+
+
 /* * IMPORTS * */
 @font-face {
   font-family: cookie;
   src: url('../fonts/Cookies.otf');
 }
-
-
 h1 {
   font-family: cookie;
   color: #6a3f26;
@@ -69,6 +69,16 @@ h2 {
   margin: 2%;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* * HOME PAGE * */
 #home-div {
   /* border: 2px solid magenta; */
@@ -78,8 +88,6 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-
 }
 #title-div {
   /* border: 2px solid green; */
@@ -308,6 +316,13 @@ h2 {
 /* * END CONTACT PAGE * */
 
 
+
+
+
+
+
+
+
 /* * COOKIE PAGE * */
 
 #cookie-div {
@@ -334,6 +349,13 @@ h2 {
   box-shadow: 0 0 10px black;
   border-radius: 50%;
 }
+
+
+
+
+
+
+
 
 
 
@@ -459,7 +481,7 @@ h2 {
     font-size: 60px;
   }
   #title-div {
-    gap: 45px;
+    gap: 40px;
     margin: 5%;
   }
   header .header-items {

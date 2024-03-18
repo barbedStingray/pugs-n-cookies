@@ -6,8 +6,6 @@ import { LuDog, LuBone } from "react-icons/lu";
 import { MdCookie } from "react-icons/md";
 
 
-
-
 export default function Contact() {
 
 
