@@ -344,7 +344,7 @@ h2 {
 .cookieDisplay {
   width: 275px;
   height: auto;
-  margin: 5%;
+  margin: 20px;
   border: 5px solid #6a3f26;
   box-shadow: 0 0 10px black;
   border-radius: 50%;

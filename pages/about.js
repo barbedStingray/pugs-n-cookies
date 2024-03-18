@@ -1,6 +1,7 @@
 import Page from '@/components/page';
 import Phoebe from '../components/phoebe';
 import Chandler from '../components/chandler';
+import Image from 'next/image'
 
 
 export default function About() {
@@ -16,7 +17,14 @@ export default function About() {
                 </div>
 
                 <div id='photo-about'>
-                    <img className='aboutPic' src='https://media.licdn.com/dms/image/C5603AQHwNxUqgeBkwg/profile-displayphoto-shrink_800_800/0/1613945052543?e=1711584000&v=beta&t=LiyTP80VOvnJRGSYhpd_evKRRoEc8TWESOv1WSm36AY' alt='a photo of abby!' />
+
+                    <Image
+                        className='aboutPic'
+                        src='/photos/abby.png'
+                        width={500}
+                        height={500}
+                        alt="Picture of the author"
+                    />
 
                     <div id='about-text'>
                         <div className='card2'>
