@@ -5,10 +5,10 @@ Welcome to my sisters cookie shop! This application was developed for her to dis
 ## Technologies Practiced/Learned
  - Next.js
  - Use of Css Media Queries to adjust to screen sizes
- - Applied css pugs. (lol)
  - <Image> component
  - Framer Motion
  - Custom <Page> component
 
 # Unique Aspects
 - Background Pattern 
+- Applied css pugs. (lol)
