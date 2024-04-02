@@ -46,7 +46,7 @@ export default function Contact() {
                 <LuBone className='homeCookie' />
 
                 <div>
-                    <img className='contact-photo' src='https://media.licdn.com/dms/image/C5616AQHMqrS2th8kMA/profile-displaybackgroundimage-shrink_350_1400/0/1614456264430?e=1711584000&v=beta&t=JJeLROXazX87WGu8qQmyTHkFMjwQkmJHdncQzLZgCvE' alt='a photo of abby!' />
+                    {/* <img className='contact-photo' src='https://media.licdn.com/dms/image/C5616AQHMqrS2th8kMA/profile-displaybackgroundimage-shrink_350_1400/0/1614456264430?e=1711584000&v=beta&t=JJeLROXazX87WGu8qQmyTHkFMjwQkmJHdncQzLZgCvE' alt='a photo of abby!' /> */}
                 </div>
 
                 <div className='home-cookiePics'>
